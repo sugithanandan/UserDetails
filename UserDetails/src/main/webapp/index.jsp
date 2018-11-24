@@ -16,9 +16,12 @@
 	String todayDate = DATE_FORMAT.format(today);
 %>
 <body>
-	<h1>
-		<marquee>Welcome Guys...Happy Learning!!!!!</marquee>
-	</h1>
+	<h2>
+		User Data Management System
+	</h2>
+	<h2>
+		<marquee>Welcome ...Happy Learning!!!!!</marquee>
+	</h2>
 	<h2>
 		Today's date is :
 		<%=todayDate%></h2>
