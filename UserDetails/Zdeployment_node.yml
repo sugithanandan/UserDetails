@@ -7,10 +7,6 @@
   - warRemotePath : /usr/share/tomcat/webapps
 
   tasks :
-   - name : pasue for three minutes
-     pause :
-        minutes: 1
-
    - name : copy war to node
      copy : src={{ warLocalPath }}/{{ warName }} dest={{ warRemotePath }}/{{ warName }}
 
