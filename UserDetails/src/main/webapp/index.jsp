@@ -16,9 +16,9 @@
 	String todayDate = DATE_FORMAT.format(today);
 %>
 <body>
-	<h2>
+	<center><h1>
 		User Data Management System
-	</h2>
+	</h1></center>
 	<h2>
 		<marquee>Welcome ...Happy Learning!!!!!</marquee>
 	</h2>
