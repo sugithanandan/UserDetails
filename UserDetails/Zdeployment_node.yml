@@ -1,0 +1,23 @@
+---
+
+- hosts : test-servers
+  vars :
+  - warName : UserDetails.war
+  - warLocalPath : /var/lib/jenkins/workspace/UserDetails/UserDetails/target
+  - warRemotePath : /usr/share/tomcat/webapps
+
+  tasks :
+   - name : pasue for three minutes
+     pause :
+        minutes: 1
+
+   - name : copy war to node
+     copy : src={{ warLocalPath }}/{{ warName }} dest={{ warRemotePath }}/{{ warName }}
+
+
+     notify :
+        - Restart tomcat7
+
+  handlers :
+   - name : Restart tomcat7
+     command : systemctl restart tomcat
