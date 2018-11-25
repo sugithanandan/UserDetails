@@ -16,4 +16,4 @@
 
   handlers :
    - name : Restart tomcat7
-     command : systemctl restart tomcat
+     command : systemctl start tomcat
