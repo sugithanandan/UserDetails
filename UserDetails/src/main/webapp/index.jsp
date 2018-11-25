@@ -23,8 +23,10 @@
 		<marquee>Welcome ...Happy Learning!!!!!</marquee>
 	</h2>
 	<h2>
-		Today's date is :
-		<%=todayDate%></h2>
+		*******************************************************
+		Today's date is :<%=todayDate%>
+		*******************************************************
+		</h2>
 	<h3>Enter your Details:</h3>
 
 
