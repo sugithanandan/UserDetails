@@ -3,7 +3,7 @@
 - hosts : test-servers
   vars :
   - warName : UserDetails.war
-  - warLocalPath : /var/lib/jenkins/workspace/UserDetailsAnsible/UserDetails/wars
+  - warLocalPath : /var/lib/jenkins/workspace/UserDetailsTest/UserDetails/wars
   - warRemotePath : /usr/share/tomcat/webapps
 
   tasks :
